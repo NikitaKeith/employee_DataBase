@@ -10,11 +10,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class EmployeeDAOImpl implements EmployeeDAO {
+public class EmployeeService implements EmployeeDAO {
 
     private final SessionFactory sessionFactory;
     @Autowired
-    public EmployeeDAOImpl(SessionFactory sessionFactory) {this.sessionFactory = sessionFactory;}
+    public EmployeeService(SessionFactory sessionFactory) {this.sessionFactory = sessionFactory;}
 
     @Override
     public List<Employee> getAllEmployees() {
@@ -41,4 +41,5 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         query.setParameter("employeeid", id);
         query.executeUpdate();
     }
+
 }

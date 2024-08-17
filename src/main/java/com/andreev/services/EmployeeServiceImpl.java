@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -38,6 +39,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Transactional
     public void deleteEmployee(int id) {
         employeeDAO.deleteEmployee(id);
+    }
+
+    //
+    @Override
+    public Optional<Employee> findByUsername(String username) {
+        return Optional.empty();
     }
 
 }
