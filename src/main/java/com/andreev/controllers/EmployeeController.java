@@ -23,7 +23,7 @@ public class EmployeeController {
     @Autowired
     public EmployeeController(EmployeeService employeeService) {this.employeeService = employeeService;}
 
-    @RequestMapping("/")
+    @RequestMapping()
     public String index(Model model) {
         List<Employee> employees = employeeService.getAllEmployees();
         model.addAttribute("employees", employees);

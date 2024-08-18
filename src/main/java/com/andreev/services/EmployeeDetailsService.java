@@ -1,7 +1,6 @@
 package com.andreev.services;
 
 import com.andreev.entity.Employee;
-import com.andreev.repositories.EmployeeService;
 import com.andreev.security.EmployeeDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,10 +13,10 @@ import java.util.Optional;
 @Service
 public class EmployeeDetailsService implements UserDetailsService {
 
-    private final com.andreev.services.EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     @Autowired
-    public EmployeeDetailsService(com.andreev.services.EmployeeService employeeService) {
+    public EmployeeDetailsService(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 

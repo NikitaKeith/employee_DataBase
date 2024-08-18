@@ -1,6 +1,7 @@
 package com.andreev.security;
 
 import com.andreev.entity.Employee;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,7 +9,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.Collections;
 
+@Getter
 public class EmployeeDetails implements UserDetails {
+    // Нужно, чтобы получать данные аутентифицированного пользователя
     private final Employee employee;
 
     public EmployeeDetails(Employee employee) {
@@ -52,8 +55,4 @@ public class EmployeeDetails implements UserDetails {
         return true;
     }
 
-    // Нужно, чтобы получать данные аутентифицированного пользователя
-    public Employee getEmployee() {
-        return this.employee;
-    }
 }
