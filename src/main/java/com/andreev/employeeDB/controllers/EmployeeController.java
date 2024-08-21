@@ -4,23 +4,22 @@ import com.andreev.employeeDB.entity.Employee;
 import com.andreev.employeeDB.exception_handling.NoSuchEmployeeException;
 import com.andreev.employeeDB.services.EmployeeService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.List;
 import java.util.Optional;
 
 @Controller
 @RequestMapping("/employees")
+@AllArgsConstructor(onConstructor_ = {@Autowired})
 public class EmployeeController {
 
     private final EmployeeService employeeService;
-    @Autowired
-    public EmployeeController(EmployeeService employeeService) {this.employeeService = employeeService;}
 
     @GetMapping()//show all
     public String index(Model model) {
