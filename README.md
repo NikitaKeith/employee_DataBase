@@ -8,7 +8,7 @@
 <li><b>edit</b> - editing</li>
 </ul>
   Index page
-  <img src="[https://postimg.cc/23LkMP6g](https://i.postimg.cc/kMf26CdM/temp-Imaget-Qxu-IX.avif)" alt="Index page" title="Index page" align="center" width="150" height="300" /> <br/> 
+  <img src="https://i.postimg.cc/kMf26CdM/temp-Imaget-Qxu-IX.avif" alt="Index page" title="Index page" align="center" width="150" height="300" /> <br/> 
 <h3>Versions:</h3>
 0.0.2.SNAPSHOT - MVC App with AOP
 <br/>
@@ -18,8 +18,8 @@
 3 - Normalize Table<br/>
 4 - Testing<br/>
 5 - Improve the design of the pages<br/>
-
-The following was used for the program:
+<br/>
+<h3>The following was used for the program:</h3>
 <ul>
 <li>Spring Boot</li>
 <li>Spring MVC</li>
