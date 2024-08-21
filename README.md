@@ -8,7 +8,7 @@
 <li><b>edit</b> - editing</li>
 </ul>
   Index page
-  <img src="https://i.postimg.cc/kMf26CdM/temp-Imaget-Qxu-IX.avif" alt="Index page" title="Index page" align="center" width="150" height="300" /> <br/> 
+  <img src="https://i.postimg.cc/kMf26CdM/temp-Imaget-Qxu-IX.avif" alt="Index page" title="Index page" align="center" width="50%" height="50%" /> <br/> 
 <h3>Versions:</h3>
 0.0.2.SNAPSHOT - MVC App with AOP
 <br/>
