@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class MyLoggingAspect {
-     @Around("execution(* com.andreev.employeeDB.repositories*(..))")
+     @Around("execution(* com.andreev.employeeDB.services(..))")
     public Object aroundAllRepositoryMethodsAdvice(
             ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
          MethodSignature methodSignature =

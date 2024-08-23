@@ -38,6 +38,13 @@ public class EmployeeController {
         return "employees/show";
     }
 
+    @GetMapping("/name/{name}")
+    public String show(@PathVariable("name") String name, Model model) {
+        Optional<Employee> employee = employeeService.findByName(name);
+        model.addAttribute("employee", employee);
+        return "employees/show";
+    }
+
     @GetMapping("/new")
     public String newPerson(@ModelAttribute("employee") Employee employee) {
         return "employees/new";
