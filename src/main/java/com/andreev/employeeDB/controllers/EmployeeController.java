@@ -41,6 +41,9 @@ public class EmployeeController {
     @GetMapping("/name/{name}")
     public String show(@PathVariable("name") String name, Model model) {
         Optional<Employee> employee = employeeService.findByName(name);
+        if (employee.isEmpty()) {
+            throw new NoSuchEmployeeException("There is no employee with name =" + name + " in database");
+        }
         model.addAttribute("employee", employee);
         return "employees/show";
     }
