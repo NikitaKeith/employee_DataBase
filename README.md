@@ -15,13 +15,6 @@
 0.0.3.SNAPSHOT - add Logging with SLF4J<br/>
 0.1.2.SNAPSHOT - add Spring Security<br/>
 <br/>
-<h3>Аurther improvements:</h3>
-1 - Add Logging<br/>
-2 - Add Spring Security<br/>
-3 - Normalize Table<br/>
-4 - Testing<br/>
-5 - Improve the design of the pages<br/>
-<br/>
 <h3>The following was used for the program:</h3>
 <ul>
 <li>Spring Boot</li>
