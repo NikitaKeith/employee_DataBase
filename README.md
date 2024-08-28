@@ -10,9 +10,9 @@
  <b> Index page</b>
   <img src="https://i.postimg.cc/kMf26CdM/temp-Imaget-Qxu-IX.avif" alt="Index page" title="Index page" align="center" width="50%" height="50%" /> 
 <h3>Versions:</h3>
-0.0.2.SNAPSHOT - MVC App with AOP
-0.0.3.SNAPSHOT - add Logging with SLF4J
-0.1.2.SNAPSHOT - add Spring Security
+0.0.2.SNAPSHOT - MVC App with AOP<br/>
+0.0.3.SNAPSHOT - add Logging with SLF4J<br/>
+0.1.2.SNAPSHOT - add Spring Security<br/>
 <br/>
 <h3>Аurther improvements:</h3>
 1 - Add Logging<br/>
