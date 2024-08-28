@@ -12,6 +12,7 @@
 <h3>Versions:</h3>
 0.0.2.SNAPSHOT - MVC App with AOP
 0.0.3.SNAPSHOT - add Logging with SLF4J
+0.1.2.SNAPSHOT - add Spring Security
 <br/>
 <h3>Аurther improvements:</h3>
 1 - Add Logging<br/>
@@ -25,6 +26,7 @@
 <li>Spring Boot</li>
 <li>Spring MVC</li>
 <li>Spring AOP</li>
+<li>Spring Security</li>
 <li>Hibernate</li>
 <li>Thymeleaf + Bootstrap 5</li>
 <li>MySQL DB</li>
