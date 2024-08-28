@@ -10,7 +10,7 @@ import lombok.Data;
 @Table(name = "employees")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //генерация на стороне БД
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //DB generiert
     @Column(name = "id")
     private int id;
     @Column(name = "name")

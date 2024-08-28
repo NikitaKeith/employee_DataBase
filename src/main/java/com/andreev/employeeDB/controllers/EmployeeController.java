@@ -6,6 +6,7 @@ import com.andreev.employeeDB.services.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,6 +21,11 @@ import java.util.Optional;
 public class EmployeeController {
 
     private final EmployeeService employeeService;
+
+    @GetMapping("/welcome")
+    public String getEmployees() {
+        return "employees/welcome";
+    }
 
     @GetMapping()//show all
     public String index(Model model) {
@@ -64,6 +70,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/{id}/edit")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public String edit(Model model, @PathVariable("id") int id) {
         model.addAttribute("employee", employeeService.getEmployee(id));
         return "employees/edit";
